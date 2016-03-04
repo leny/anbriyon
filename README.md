@@ -1,5 +1,5 @@
 # anbriyon
 
-> Something I'm working on…
+> Something I'm working on, but not alone…
 
 * * *
