@@ -128,7 +128,7 @@
                 var iStartingDate = ( new Date( 2015, 11, 7 ) ).getTime(),
                     iEndingDate = ( new Date( 2016, 8, 12 ) ).getTime() - iStartingDate,
                     _ref,
-                    iNow = ( ( _ref = ( new Date() ).getTime() - iStartingDate ) >= iEndingDate ? iEndingDate : _ref );
+                    iNow = ( ( _ref = Date.now() - iStartingDate ) >= iEndingDate ? iEndingDate : _ref );
 
                 document.querySelector( "progress" ).setAttribute( "value", ~~( iNow / iEndingDate * 100 ) );
                 document.querySelector( "time" ).innerHTML = ( ~~( ( iEndingDate - iNow ) / 86400000 ) ) + " jours";
